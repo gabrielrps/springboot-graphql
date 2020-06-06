@@ -7,4 +7,7 @@ Banco: MySQL
 
 Chamadas GraphQL:
      - Estão na pasta: "src\main\resources\templates"
-     
+
+
+Para acessar a plataforma:
+http://localhost:8080/playground
