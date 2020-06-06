@@ -1,0 +1,44 @@
+# {
+#   hello,
+#   soma(a:1, b:2),
+#   cliente(id:7){
+#     id,nome, email
+#   },
+#   clientes{
+#     id,nome, email
+#   }
+# }
+
+# mutation {
+#   saveCliente(cliente:{nome:"Gabriel Rezende novo", email:"teste@gmail.com"}){
+#     id, nome, email
+#   }
+#   deleteCliente(id:1)
+# }
+
+# {
+#   c1:cliente(id:8){
+#     ...fragCliente
+#   },
+#   c2:cliente(id:3){
+#     ...fragCliente
+#   },
+#   clientes{
+#     ...fragCliente
+#   }
+# }
+
+# fragment fragCliente on Cliente {
+#  id, nome, email
+# }
+
+query GetClienteWithVariable($id:ID!){
+  cliente(id:$id){
+    id, nome, email
+  }
+}
+
+
+
+
+

@@ -1,0 +1,15 @@
+{
+  compras{
+    id, quantidade, status, cliente{nome}, produto{nome}
+  }
+  # ,compra(id:1){
+  #   id, quantidade, status, cliente{nome}, produto{nome}
+  # }
+}
+
+# mutation {
+#   saveCompra(
+#     compra: {quantidade:10, status:"OK", clienteId:4, produtoId:4}){
+#     id, cliente{id, nome}, produto{id, nome}
+#   }
+# }

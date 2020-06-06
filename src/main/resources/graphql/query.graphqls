@@ -1,0 +1,18 @@
+scalar Date
+
+schema {
+    query: Query,
+    mutation: Mutation
+}
+
+type Query {
+
+    hello:String,
+
+    soma(a:Int, b:Int): Int,
+
+}
+
+type Mutation{
+
+}

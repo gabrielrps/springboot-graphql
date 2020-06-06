@@ -1,0 +1,18 @@
+# {
+#   produto(id:1),{
+#     ...fragProdutos
+#   }
+#   produtos{
+#     ...fragProdutos
+#   }
+# }
+
+# fragment fragProdutos on Produto{
+#   id, nome, valor
+# }
+
+# mutation {
+#   saveProduto(produto:{nome:"Xioami", valor:1500}){
+#     id, nome, valor
+#   }
+# }
